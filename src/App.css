@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.defaultSpinner {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: block;
+  position: relative;
+  top: 100px;
+  background-color: transparent;
+  border: 12px solid transparent;
+  border-color: #eee #eee #444 #444;
+  -webkit-animation: rotateLoading 1s linear 0s infinite normal;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: rotateLoading 1.5s linear 0s infinite normal;
+  -moz-transform-origin: 50% 50%;
+  animation: rotateLoading 1.5s linear 0s infinite normal;
+  transform-origin: 50% 50%;
+  transition: all 0.1s ease-in;
+  margin: 0 auto;
+}
